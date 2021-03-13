@@ -30,7 +30,7 @@ public class Race {
             while (car.getPassed() < distance) {
                 int speed = car.getRandomSpeed();
                 car.setPassed(car.getPassed() + speed);
-                System.out.println("Car name: " + car.getName() + " => " + "speed: " + car.getRandomSpeed());
+                System.out.println("Car name: " + car.getName() + " => " + "speed: " + car.getRandomSpeed() + " passed: " + car.getPassed());
                 try {
                     sleep(1000);
                 } catch (InterruptedException e) {
